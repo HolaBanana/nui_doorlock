@@ -1,5 +1,7 @@
-#### Against my better judgement I have updated this resource. Requires [ESX Legacy aka 1.3](https://github.com/esx-framework/esx-legacy)
-I've disabled issues because I can only spend so much time a day repeating myself.
+Edited by **HolaBanana#4215** for **WWRP Development**
+Added compatibillity for **wwrpNotify**
+
+For more informations - https://discord.gg/gFGgzbf9aP
 
 # <a href='https://forum.cfx.re/t/esx-nui-doorlock-improved-performance-supports-sliding-doors/2068259'>nui_doorlock</a>
 A fork of esx_doorlock, featuring improved performance and improved functionality.
@@ -30,7 +32,7 @@ The state of doors is only checked while in range, and the number of checks per 
 * Persistent door states! Door states are saved when the resource stops, then loaded back up on start.  
 States.json will auto-generate if the file does not exist.  
 
-* Config for both Community MRPD and gabz_MRPD  
+* Config for wwrpNotify if you don't use it, write **false**  
 Just choose which config file to use and delete the one you are not using.
 
 * Set door access permissions  
