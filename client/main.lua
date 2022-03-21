@@ -258,19 +258,31 @@ AddEventHandler('nui_doorlock:setState', function(sid, doorID, locked, src)
 							DoorSystemSetDoorState(v.doorHash, 1, false, false) -- Set to locked
 							DoorSystemSetAutomaticDistance(v.doorHash, 0.0, false, false)
 							if k == 2 then PlaySound(Config.DoorList[doorID], src) return end -- End the loop
+							if Config.wwrpNotify and Config.wwrpNotify.Enabled then
+								TriggerEvent('wwrpNotify:Notify', "info", Config.DoorTitle1, Config.DoorText1)
+							end
 						else
 							DoorSystemSetDoorState(v.doorHash, 0, false, false) -- Set to unlocked
 							DoorSystemSetAutomaticDistance(v.doorHash, 30.0, false, false)
 							if k == 2 then PlaySound(Config.DoorList[doorID], src) return end -- End the loop
+							if Config.wwrpNotify and Config.wwrpNotify.Enabled then
+								TriggerEvent('wwrpNotify:Notify', "info", Config.DoorTitle2, Config.DoorText2)
+							end
 						end
 					elseif Config.DoorList[doorID].locked and (v.doorState == 4) then
 						if Config.DoorList[doorID].oldMethod then FreezeEntityPosition(v.object, true) end
 						DoorSystemSetDoorState(v.doorHash, 1, false, false) -- Set to locked
 						if Config.DoorList[doorID].doors[1].doorState == Config.DoorList[doorID].doors[2].doorState then PlaySound(Config.DoorList[doorID], src) return end -- End the loop
+						if Config.wwrpNotify and Config.wwrpNotify.Enabled then
+							TriggerEvent('wwrpNotify:Notify', "info", Config.DoorTitle1, Config.DoorText1)
+						end
 					elseif not Config.DoorList[doorID].locked then
 						if Config.DoorList[doorID].oldMethod then FreezeEntityPosition(v.object, false) end
 						DoorSystemSetDoorState(v.doorHash, 0, false, false) -- Set to unlocked
 						if Config.DoorList[doorID].doors[1].doorState == Config.DoorList[doorID].doors[2].doorState then PlaySound(Config.DoorList[doorID], src) return end -- End the loop
+						if Config.wwrpNotify and Config.wwrpNotify.Enabled then
+							TriggerEvent('wwrpNotify:Notify', "info", Config.DoorTitle2, Config.DoorText2)
+						end
 					else
 						if round(v.currentHeading, 0) == round(v.objHeading, 0) then
 							DoorSystemSetDoorState(v.doorHash, 4, false, false) -- Force to close
