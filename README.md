@@ -1,6 +1,8 @@
 Edited by **HolaBanana#4215** for **WWRP Development**
 Added compatibillity for **wwrpNotify**
 
+**NO SUPPORT PROVIDED BY MYSELF OR THE ORIGINAL AUTHOR**
+
 For more informations - https://discord.gg/gFGgzbf9aP
 
 <img src="https://imgur.com/Itd5jtM.jpg"/></p>
