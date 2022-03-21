@@ -3,7 +3,7 @@ Added compatibillity for **wwrpNotify**
 
 For more informations - https://discord.gg/gFGgzbf9aP
 
-<img src="https://imgur.com/Itd5jtM"/></p>
+<img src="https://imgur.com/Itd5jtM.jpg"/></p>
 
 # <a href='https://forum.cfx.re/t/esx-nui-doorlock-improved-performance-supports-sliding-doors/2068259'>nui_doorlock</a>
 A fork of esx_doorlock, featuring improved performance and improved functionality.
