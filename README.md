@@ -1,6 +1,8 @@
 Edited by **HolaBanana#4215** for **WWRP Development**
 Added compatibillity for **wwrpNotify**
 
+**wwrpNotify** is fully configurable in config.lua
+
 **NO SUPPORT PROVIDED BY MYSELF OR THE ORIGINAL AUTHOR**
 
 I can only offer support for wwrpNotify
